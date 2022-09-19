@@ -1,0 +1,12 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+	<head>
+		<title>List of Employee</title>
+	</head>
+	<body style="text-align:center;">
+		<h1 >List of Employee</h1>
+		<div th:each="employee : ${employees}">
+			<div th:text="${employee}"></div>
+		</div>		
+	</body>
+</html>

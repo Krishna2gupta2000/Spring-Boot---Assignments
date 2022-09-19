@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+	<head>
+		<title>SBI Services</title>
+	</head>
+	<body style="text-align:center;">
+		<h1 >State Bank of India</h1>
+		<table border="1">
+			<tr>
+				<th>Branch Name</th>
+				<th>City</th>
+			</tr>
+			<tr th:each="bank : ${banks}">
+				<td th:text="${bank}"></td>
+				<td>Bangalore</td> 	
+			</tr>
+			
+		</table>
+		
+	</body>
+</html>
